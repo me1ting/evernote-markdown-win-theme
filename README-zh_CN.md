@@ -2,6 +2,8 @@
 
 提供Evernote中文版的Windows平台下的markdown编辑器的主题。
 
+![](https://github.com/hyboxu/evernote-markdown-win-theme/raw/master/preview.png)
+
 # 基本原理
 
 与Mac版本不同，Evernote_China_Win并未通过本地的方式读取Markdown编辑器文件，而是打包到Evernote.exe的资源目录`ZIP/MARKDOWNEDITORRES`。因此[evernote-markdown-vue](https://github.com/timothyzhw/evernote-markdown-vue)的经验不能直接复用。
