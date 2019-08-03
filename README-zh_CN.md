@@ -25,6 +25,10 @@
 - `[TOC]`中的链接取消加粗
 - 修复`.tui-editor-contents pre`导致的黑边问题
 - 修复 `* {font-family: Microsoft Yahei, sans-serif}`导致代码渲染字体异常的问题
+- 设置默认预览，双击编辑
+- 替换入门指南按钮为预览按钮，方便切换
+
+
 
 具体修改请使用`Beyond Compare`之类软件对比查看。
 
