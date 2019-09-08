@@ -48,7 +48,7 @@
 
 - 复制`vue`下的所有文件到`C:\nginx\html\`目录下
 - 编辑`C:\nginx\conf\nginx.conf`，修改`listen       80;`为`listen       555;`
-- 运行`C:\nginx\nginx.exe`，打开浏览器访问`http://localhost:555`，出现Markdown编辑器页面说明生效。
+- 运行`C:\nginx\nginx.exe`，打开浏览器访问`http://localhost:555`，双击页面，出现Markdown编辑器页面说明生效。
 
 由于Nginx是后台服务，每次开机通常只需要执行一次。
 

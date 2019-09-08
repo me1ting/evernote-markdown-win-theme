@@ -42,7 +42,7 @@ Just for newer:
 - Download [Windows version of Nginx](https://nginx.org/en/download.html) and extract it to the appropriate place, assuming its path is `C:\nginx`
 - Copy all files under `vue` to the `C:\nginx\html\` directory
 - Edit `C:\nginx\conf\nginx.conf`, modify `listen 80;` to `listen 555;`
-- Run `C:\nginx\nginx.exe` and open a browser to access `http://localhost:555`, a markdown editor will appear under normal circumstances(if not, double click)
+- Run `C:\nginx\nginx.exe` and open a browser to access `http://localhost:555`, double click the html page and a markdown editor will appear
 
 ## 2. edit evernote.exe
 
