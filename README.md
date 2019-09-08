@@ -33,18 +33,34 @@ Supply:
 
 First, please make sure your evernote is Chinese Edition, if not, you can try it.
 
-## 1. set up a local site
+## build editor(optional)
+You can build the editor, or using built one.If you really want to do this,, you can:
+
+install dependences:
+```
+cd vue
+npm install uglify-js
+```
+
+build it：
+```
+build.bat
+```
+
+The built editor files is located in `vue\out`.
+
+## set up a local site
 
 Nginx is recommended here, and the background cpu&memory is extremely low. Cache is very important here, each time you start evernote,  it  loads editor's resource files only once. Each time evernote render a page, it requests `index.html`, usually returning `304`, so the rendering efficiency is excellent.
 
 Just for newer:
 
 - Download [Windows version of Nginx](https://nginx.org/en/download.html) and extract it to the appropriate place, assuming its path is `C:\nginx`
-- Copy all files under `vue` to the `C:\nginx\html\` directory
+- Copy all editor files to the `C:\nginx\html\` directory
 - Edit `C:\nginx\conf\nginx.conf`, modify `listen 80;` to `listen 555;`
 - Run `C:\nginx\nginx.exe` and open a browser to access `http://localhost:555`, double click the html page and a markdown editor will appear
 
-## 2. edit evernote.exe
+## edit evernote.exe
 
 Close evernote, backup it, and use a hex editor (such as [UltraEdit](https://www.ultraedit.com/)) to replace
 

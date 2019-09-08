@@ -37,22 +37,36 @@
 - 由于演示功能是通过`main.min.js`行内CSS加载的方式生成的html页面，无法以上修改对其无效。个人由于不使用该功能，因此未作修改。
 
 # 使用方式
+## 构建编辑器（可选）
+你可以自行构建该编辑器，也可以下载已经编译好的。如果你确实需要这么做，可以：
 
-## 1. 搭建自定义服务器
+安装依赖：
+```
+cd vue
+npm install uglify-js
+```
+
+执行编译：
+```
+build.bat
+```
+
+构建好的编辑器文件位于`vue\out`中。
+
+## 搭建自定义服务器
 
 这里推荐使用Nginx，后台占用内存极低。关键是支持缓存，每次启动Evernote只需加载一次资源文件，每次渲染页面请求一次`index.html`，通常返回`304`，渲染效率很高。
 
 以下教程面向新手，熟悉Web服务器的开发人员可以跳过：
 
 - 下载[Windows版本的Nginx](https://nginx.org/en/download.html)，解压到合适的地方，假设设其路径为`C:\nginx`
-
-- 复制`vue`下的所有文件到`C:\nginx\html\`目录下
+- 复制所有编辑器文件到`C:\nginx\html\`目录下
 - 编辑`C:\nginx\conf\nginx.conf`，修改`listen       80;`为`listen       555;`
 - 运行`C:\nginx\nginx.exe`，打开浏览器访问`http://localhost:555`，双击页面，出现Markdown编辑器页面说明生效。
 
 由于Nginx是后台服务，每次开机通常只需要执行一次。
 
-## 2. 修改Evernote.exe
+## 修改Evernote.exe
 
 关闭Evernote程序，将Evernote.exe备份，使用16进制编辑器（如[UltraEdit](https://www.ultraedit.com/)），将：
 
