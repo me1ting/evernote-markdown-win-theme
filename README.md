@@ -24,7 +24,7 @@ The theme works well on my evernote : `6.18.14.753 (600753) Public (CE Build ce-
 
 Supply:
 
-- `vue markdown theme` from[evernote-markdown-vue](https://github.com/timothyzhw/evernote-markdown-vue)
+- `vue markdown theme` from [evernote-markdown-vue](https://github.com/timothyzhw/evernote-markdown-vue)
 - fix some bugs for the theme
 - preview default, double click to edit
 - replace guide button to viewer button
@@ -34,7 +34,7 @@ Supply:
 First, please make sure your evernote is Chinese Edition, if not, you can try it.
 
 ## build editor(optional)
-You can build the editor, or using built one.If you really want to do this,, you can:
+You can build the editor, or using a built one. If you really want to do this, you can:
 
 install dependences:
 ```
@@ -62,7 +62,7 @@ Just for newer:
 
 ## edit evernote.exe
 
-Close evernote, backup it, and use a hex editor (such as [UltraEdit](https://www.ultraedit.com/)) to replace
+Close evernote, backup it, and use a hex editor (such as [UltraEdit](https://www.ultraedit.com/), [hexreplace](https://github.com/hyboxu/hexreplace) is a lighter tool) to replace
 
 `68007400740070003A002F002F006C006F00610064006D00610072006B0064006F0077006E002F0000000000`
 

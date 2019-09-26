@@ -68,7 +68,7 @@ build.bat
 
 ## 修改Evernote.exe
 
-关闭Evernote程序，将Evernote.exe备份，使用16进制编辑器（如[UltraEdit](https://www.ultraedit.com/)），将：
+关闭Evernote程序，将Evernote.exe备份，使用16进制编辑器（如[UltraEdit](https://www.ultraedit.com/)，[hexreplace](https://github.com/hyboxu/hexreplace)是一个更轻量的工具），将：
 
 `68007400740070003A002F002F006C006F00610064006D00610072006B0064006F0077006E002F0000000000`
 
